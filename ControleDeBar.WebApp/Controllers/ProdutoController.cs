@@ -15,7 +15,7 @@ namespace ControleDeBar.WebApp.Controllers
 
         public ProdutoController()
         {
-            contextoDados = new ContextoDados();
+            contextoDados = new ContextoDados(true);
             repositorioProduto = new RepositorioProdutoEmArquivo(contextoDados);
         }
 
@@ -39,7 +39,7 @@ namespace ControleDeBar.WebApp.Controllers
 
         [HttpPost("cadastrar")]
         [ValidateAntiForgeryToken]
-        public IActionResult Cadastrar(CadastrarProdutoViewModel cadastrarVM)
+        public ActionResult Cadastrar(CadastrarProdutoViewModel cadastrarVM)
         {
             var registros = repositorioProduto.SelecionarRegistros();
 

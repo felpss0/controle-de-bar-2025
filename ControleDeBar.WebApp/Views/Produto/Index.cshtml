@@ -20,8 +20,8 @@
         <div class="col-12 col-md-3">
             <div class="card border-0">
                 <div class="card-body">
-                    <h5 class="card-title">Produto: #@item.Nome</h5>
-                    <p class="card-text"><span class="fw-semibold">Preço:</span> #@item.Preco.ToString("C2")</p>
+                    <h5 class="card-title">Produto: @item.Nome</h5>
+                    <p class="card-text"><span class="fw-semibold">Preço:</span> @item.Preco.ToString("C2")</p>
 
                     <span class="d-flex gap-1 justify-content-end mt-4">
                         <a href="/produtos/editar/@item.Id" class="btn btn-danger rounded-circle opcao-card">
