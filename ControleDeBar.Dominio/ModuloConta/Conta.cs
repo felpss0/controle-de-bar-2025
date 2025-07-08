@@ -46,7 +46,7 @@ namespace ControleDeBar.Dominio.ModuloConta
         public void Fechar() 
         {
             EstaAberta = false;
-            Fechamento = DateTime.Now; ;
+            Fechamento = DateTime.Now; 
 
             Mesa.Desocupar();
         }
