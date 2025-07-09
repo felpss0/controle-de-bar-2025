@@ -6,7 +6,7 @@ using System.Data;
 
 namespace ControleDeBar.Infraestrutura.SqlServer.ModuloProduto
 {
-    internal class RepositorioProdutoSql : RepositorioBaseSql<Produto>, IRepositorioProduto
+    public class RepositorioProdutoSql : RepositorioBaseSql<Produto>, IRepositorioProduto
     {
         public RepositorioProdutoSql(IDbConnection conexaoComBanco) : base(conexaoComBanco)
         {
