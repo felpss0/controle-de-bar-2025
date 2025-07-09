@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		tabelas.sql = tabelas.sql
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ControleDeBar.Infraestrutura.Database", "ControleDeBar.Infraestrutura.Database\ControleDeBar.Infraestrutura.Database.sqlproj", "{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,12 @@ Global
 		{B4CB0E53-EF32-4464-9952-59E5222B1588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4CB0E53-EF32-4464-9952-59E5222B1588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4CB0E53-EF32-4464-9952-59E5222B1588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,7 @@ Global
 		{A4742289-938F-41C2-A17B-C2C933C7E688} = {31C92AAC-576E-47CE-861D-8A67C8701359}
 		{D7E103ED-668B-418D-AD7B-C2D651E2FDC7} = {2804C668-36CB-45D1-A013-27021CCFD150}
 		{B4CB0E53-EF32-4464-9952-59E5222B1588} = {2804C668-36CB-45D1-A013-27021CCFD150}
+		{8DAAC75D-2E17-4D04-BF5B-1D8C50466F9A} = {2804C668-36CB-45D1-A013-27021CCFD150}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12C483A2-FD24-4BA4-9C6A-C9E19F7DC38A}

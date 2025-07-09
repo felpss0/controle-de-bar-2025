@@ -21,7 +21,7 @@ namespace ControleDeBar.WebApp
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IDbConnection>(provider =>
             {
-                const string connnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB;Initial Catalog = ControleDeBarDb; Integrated Security = True; Pooling = False; Encrypt = True; Trust Server Certificate = False";
+                const string connnectionString = "Server=tcp:controle-de-bar-2025.database.windows.net,1433;Initial Catalog=ControleDeBarDb;Persist Security Info=False;User ID=filipe;Password={Teste123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 return new SqlConnection(connnectionString);
             });

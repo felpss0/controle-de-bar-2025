@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[TBGarcom] (
+    [Id]   UNIQUEIDENTIFIER NOT NULL,
+    [Nome] NVARCHAR (100)   NOT NULL,
+    [Cpf]  NVARCHAR (14)    NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
