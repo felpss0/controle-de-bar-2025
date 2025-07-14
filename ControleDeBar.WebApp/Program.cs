@@ -8,7 +8,6 @@ using ControleDeBar.Infraestrutura.SqlServer.ModuloMesa;
 using ControleDeBar.Infraestrutura.SqlServer.ModuloProduto;
 using Microsoft.Data.SqlClient;
 using System.Data;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ControleDeBar.WebApp
 {
@@ -21,7 +20,7 @@ namespace ControleDeBar.WebApp
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IDbConnection>(provider =>
             {
-                const string connnectionString = "Server=tcp:controle-de-bar-2025.database.windows.net,1433;Initial Catalog=ControleDeBarDb;Persist Security Info=False;User ID=filipe;Password={Teste123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                var connnectionString = builder.Configuration["SQL_CONNECTION_STRING"];
 
                 return new SqlConnection(connnectionString);
             });
